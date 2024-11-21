@@ -1,0 +1,87 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #333333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #4CAF50; /* Accent color */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-top: 2px solid #333333;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+/* Dark mode toggle */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+body.light-mode button {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.light-mode button:hover {
+    background-color: #555555;
+}
