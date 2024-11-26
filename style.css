@@ -1,87 +1,93 @@
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-bottom: 2px solid #333333;
+    width: 100%;
+    height: auto;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #4CAF50; /* Accent color */
+.container {
+    padding: 10px 10%;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #cccccc;
-}
-
-main {
-    flex: 1;
+nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-content {
+    display: flex; /* Enable horizontal alignment */
+    align-items: center; /* Vertically center the elements */
+    justify-content: space-between; /* Horizontally center the content */
+    flex-wrap: wrap; /* Stack content on smaller screens */
+    margin-top: 20px; /* Add space below navigation */
+}
+
+.header-content h1 {
+    font-size: 80px;
+    color: #cf3961;
+}
+
+.profile-pic {
+    width: auto; /* Set the desired size of the image */
+    height: 550px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+#title {
+    font-size: 25px;
 }
 
 .intro {
-    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-button {
-    background-color: #4CAF50;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1e1e1e;
-    border-top: 2px solid #333333;
-    color: #cccccc;
-    font-size: 0.9rem;
-}
-
-/* Dark mode toggle */
-body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-body.light-mode header,
-body.light-mode footer {
-    background-color: #f4f4f4;
-    color: #333333;
-}
-
-body.light-mode button {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-body.light-mode button:hover {
-    background-color: #555555;
+#top {
+    margin-top: 25px;
 }
