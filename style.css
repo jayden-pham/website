@@ -10,9 +10,11 @@ body {
     color: #fff;
 }
 
+/* Header */
 header {
     width: 100%;
     height: auto;
+    background-attachment: fixed;
 }
 
 .container {
@@ -26,15 +28,16 @@ nav {
     flex-wrap: wrap;
 }
 
-.logo {
+#logo {
     width: 110px;
     height: auto;
+    margin-left: -38px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 0px 10px 30px;
 }
 
 nav ul li a {
@@ -59,24 +62,12 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-content {
+#header-content {
     display: flex; /* Enable horizontal alignment */
     align-items: center; /* Vertically center the elements */
     justify-content: space-between; /* Horizontally center the content */
     flex-wrap: wrap; /* Stack content on smaller screens */
     margin-top: 20px; /* Add space below navigation */
-}
-
-.header-content h1 {
-    font-size: 80px;
-    color: #cf3961;
-}
-
-.profile-pic {
-    width: auto; /* Set the desired size of the image */
-    height: 550px; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
 }
 
 #title {
@@ -90,4 +81,59 @@ nav ul li a:hover::after {
 
 #top {
     margin-top: 25px;
+}
+
+#header-content h1 {
+    font-size: 80px;
+    color: #cf3961;
+    background: linear-gradient(to bottom, #dc5653, #b03277);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#profile-pic {
+    width: auto; /* Set the desired size of the image */
+    height: 550px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+/* About */
+#about {
+    padding: 80px, 0;
+    color: #ababab;
+}
+
+.subtitle {
+    font-size: 60px;
+    color: #fff;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#active-link::after {
+    width: 75%;
 }

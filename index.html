@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="images/logo.png" id="logo">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -19,17 +20,32 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-content">
+            <div id="header-content">
                 <div>
                     <p id="title">Software/ML Engineer</p>
                     <p class="intro" id="top">Hi, my name is</p>
                     <h1>Jayden Pham</h1>
                     <p class="intro">from Sydney, Australia.</p>
                 </div>
-                <img src="images/me.jpg" class="profile-pic">
+                <img src="images/me.jpg" id="profile-pic">
             </div>
         </div>
     </header>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="subtitle">About Me</h1>
+                <p>This is some placeholder text</p>
+                <div class="tabs">
+                    <p class="tab-link" id="active-link">Experience</p>
+                    <p class="tab-link">Skills</p>
+                    <p class="tab-link">Education</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>© 2024 Jayden Pham. All Rights Reserved.</p>
     </footer>
