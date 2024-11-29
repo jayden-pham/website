@@ -18,15 +18,16 @@ header {
 }
 
 .container {
-    padding: 10px 20%;
+    padding: 0 20%;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -20%;
+    position: fixed;
+    margin-left: 149px;
+    top: 0;
 }
 
 #logo {
@@ -35,44 +36,26 @@ nav {
     margin-left: -38px;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 0px 10px 30px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 #header-content {
-    display: flex; /* Enable horizontal alignment */
-    align-items: center; /* Vertically center the elements */
-    justify-content: space-between; /* Horizontally center the content */
-    flex-wrap: wrap; /* Stack content on smaller screens */
-    margin-top: 70px; /* Add space below navigation */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 180px;
 }
 
 #title {
     font-size: 25px;
+    opacity: 0.6;
+    letter-spacing: 2px;
 }
 
 .intro {
@@ -141,6 +124,7 @@ nav ul li a:hover::after {
 
 .jumping-word {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .jumping-word h4 {
@@ -190,10 +174,111 @@ nav ul li a:hover::after {
 
 /* About */
 #about {
-    margin-top: 70px;
+    margin-top: 150px;
 }
-.col-1 {
-    position: sticky;
+
+#about .container {
+    display: flex;
+}
+
+#about .container h1 {
+    font-size: 50px;
+    flex: 1;
+}
+
+#about h1::after {
+    content: "."; /* The last letter */
+    color: #ee3255; /* Desired color */
+    font-weight: bold; /* Optional styling */
+}
+
+#about .container div {
+    flex: 1;
+    margin-top: -10px;
+}
+
+.section .container p {
+    font-size: large;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+}
+
+.anscenter {
+    color: white;
+    text-decoration: none;
+}
+
+.anscenter img {
+    height: 24px;
+    width: auto;
+}
+
+/* Portfolio */
+#portfolio {
+    margin-top: 170px;
+}
+
+#portfolio h1 {
+    font-size: 50px;
+}
+
+#portfolio h1::after {
+    content: "."; /* The last letter */
+    color: #ee3255; /* Desired color */
+    font-weight: bold; /* Optional styling */
+}
+
+#portfolio #intro {
+    margin-right: 650px;
+}
+
+.project-container {
+    margin: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-container .image-container {
+    flex: 1;
+}
+
+.project-container .project-text {
+    flex: 1;
+}
+
+.image-container {
+    position: relative; /* Establish positioning context */
+    width: 450px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image */
+    overflow: hidden; /* Ensures the overlay stays within the bounds */
+}
+
+/* Image styling */
+#portfolio img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute; /* Positioned over the image */
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background: rgba(220, 86, 83, 0.5); /* Transparent colored overlay */
+    transition: opacity 0.3s ease; /* Smooth fading effect */
+    opacity: 1; /* Overlay is visible by default */
+    border-radius: 10px;
+}
+
+/* Hover effect */
+.image-container:hover .overlay {
+    opacity: 0; /* Hides the overlay on hover */
 }
 
 /* Footer */
