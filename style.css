@@ -68,7 +68,7 @@ nav ul li a:hover::after {
     align-items: center; /* Vertically center the elements */
     justify-content: space-between; /* Horizontally center the content */
     flex-wrap: wrap; /* Stack content on smaller screens */
-    margin-top: 20px; /* Add space below navigation */
+    margin-top: 70px; /* Add space below navigation */
 }
 
 #title {
@@ -86,7 +86,6 @@ nav ul li a:hover::after {
 
 #header-content h1 {
     font-size: 80px;
-    color: #cf3961;
     background: linear-gradient(to bottom, #dc5653, #b03277);
     background-clip: text;
     -webkit-background-clip: text;
@@ -103,7 +102,7 @@ nav ul li a:hover::after {
 /* Social links */
 #socials {
     position: fixed;
-    top: 72%;
+    top: 65%;
     left: 149px;
 }
 
@@ -118,54 +117,86 @@ nav ul li a:hover::after {
 .icon {
     width: 34px;
     height: auto;
-    transition: transform 0.4s;
+    opacity: 0.4;
+    transition: opacity 0.5s, transform 0.4s;
 }
 
 .icon:hover {
     transform: scale(1.2);
+    opacity: 1;
 }
 
 .vertical-line {
     border-left: 3px solid white;
     height: 100px;
     margin-left: 15px;
+    opacity: 0.4;
+}
+
+/* Scroll */
+#scroll {
+    margin-top: 20px;
+    margin-left: 15%;
+}
+
+.jumping-word {
+    display: flex;
+}
+
+.jumping-word h4 {
+    opacity: 0.6;
+    margin-right: 4px;
+    animation: jump 2.7s ease-in-out infinite;
+}
+
+@keyframes jump {
+    0%, 20%, 100% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-6px);
+    }
+}
+
+.jumping-word #scroll-1 {
+    animation-delay: 0s;
+}
+
+.jumping-word #scroll-2 {
+    animation-delay: 0.15s;
+}
+
+.jumping-word #scroll-3 {
+    animation-delay: 0.3s;
+}
+
+.jumping-word #scroll-4 {
+    animation-delay: 0.45s;
+}
+
+.jumping-word #scroll-5 {
+    animation-delay: 0.6s;
+}
+
+.jumping-word #scroll-6 {
+    animation-delay: 0.75s;
+}
+
+#scroll .vertical-line {
+    margin-left: 367px;
+    height: 300px;
+    border-left: 2px solid white;
 }
 
 /* About */
 #about {
-    padding: 80px, 0;
-    color: #ababab;
+    margin-top: 70px;
+}
+.col-1 {
+    position: sticky;
 }
 
-.subtitle {
-    font-size: 60px;
-    color: #fff;
-}
-
-.tabs {
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-link {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative
-}
-
-.tab-link::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-#active-link::after {
-    width: 75%;
+/* Footer */
+footer {
+    text-align: center;
 }
