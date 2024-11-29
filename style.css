@@ -18,7 +18,7 @@ header {
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px 20%;
 }
 
 nav {
@@ -26,6 +26,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 -20%;
 }
 
 #logo {
@@ -97,6 +98,37 @@ nav ul li a:hover::after {
     height: 550px; /* Maintain aspect ratio */
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+/* Social links */
+#socials {
+    position: fixed;
+    top: 72%;
+    left: 149px;
+}
+
+#links ul {
+    list-style: none;
+}
+
+#links ul li {
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 34px;
+    height: auto;
+    transition: transform 0.4s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.vertical-line {
+    border-left: 3px solid white;
+    height: 100px;
+    margin-left: 15px;
 }
 
 /* About */
