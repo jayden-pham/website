@@ -26,12 +26,12 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     position: fixed;
-    margin-left: 149px;
-    top: 0;
+    margin-left: 175px;
+    top: 26px
 }
 
 #logo {
-    width: 110px;
+    width: 60px;
     height: auto;
     margin-left: -38px;
 }
@@ -42,6 +42,7 @@ nav a {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-left: 20px;
 }
 
 #header-content {
@@ -173,23 +174,25 @@ nav a {
 }
 
 /* About */
-#about {
-    margin-top: 150px;
+.section {
+    margin-top: 170px;
 }
 
 #about .container {
     display: flex;
 }
 
-#about .container h1 {
+.section h1 {
     font-size: 50px;
-    flex: 1;
 }
-
-#about h1::after {
+.section h1::after {
     content: "."; /* The last letter */
     color: #ee3255; /* Desired color */
     font-weight: bold; /* Optional styling */
+}
+
+#about h1 {
+    flex: 1;
 }
 
 #about .container div {
@@ -215,20 +218,6 @@ nav a {
 }
 
 /* Portfolio */
-#portfolio {
-    margin-top: 170px;
-}
-
-#portfolio h1 {
-    font-size: 50px;
-}
-
-#portfolio h1::after {
-    content: "."; /* The last letter */
-    color: #ee3255; /* Desired color */
-    font-weight: bold; /* Optional styling */
-}
-
 #portfolio #intro {
     margin-right: 650px;
 }
