@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -234,30 +234,26 @@ nav a {
 }
 
 .project-container {
-    margin: 50px 80px;
+    margin: 90px 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.project-container .image-container {
-    flex: 1;
-}
-
 .project-container .project-text {
-    flex: 1;
+    position: relative;
+    width: 474px;
 }
 
 .image-container {
     position: relative; /* Establish positioning context */
-    width: 450px; /* Set the width of the image */
-    height: 300px; /* Set the height of the image */
+    width: 474px; /* Set the width of the image */
+    height: 316px; /* Set the height of the image */
     overflow: hidden; /* Ensures the overlay stays within the bounds */
 }
 
-/* Image styling */
-#portfolio img {
-    width: 450px;
-    height: 300px;
+.project-image {
+    width: 474px;
+    height: 316px;
     object-fit: cover;
     display: block;
     border-radius: 10px;
@@ -265,20 +261,63 @@ nav a {
 
 /* Overlay styling */
 .overlay {
-    position: absolute; /* Positioned over the image */
+    position: absolute;
     top: 0;
     left: 0;
-    width: 450px;
-    height: 300px;
-    background: rgba(220, 86, 83, 0.5); /* Transparent colored overlay */
-    transition: opacity 0.3s ease; /* Smooth fading effect */
-    opacity: 1; /* Overlay is visible by default */
+    width: 474px;
+    height: 316px;
+    background: linear-gradient(rgba(0,0,0,0.5), #ee3255);
+    transition: opacity 0.2s ease;
+    opacity: 0.9;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* Hover effect */
 .image-container:hover .overlay {
-    opacity: 0; /* Hides the overlay on hover */
+    opacity: 0;
+}
+
+.misc {
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    width: 474px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.project-skills {
+    display: flex;
+    gap: 10px;
+}
+
+.skill {
+    background-color: rgba(238, 50, 85, 0.4);
+    border-radius: 15px;
+    font-size: large;
+    color: rgb(255, 207, 216);
+    padding: 5px 12px;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-link {
+    height: 31px; 
+    width: 31px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    margin-bottom: -10px;
+}
+
+
+.project-link:hover {
+    opacity: 1;
 }
 
 /* Footer */
