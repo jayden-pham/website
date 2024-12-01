@@ -13,44 +13,56 @@ body {
 /* Header */
 header {
     width: 100%;
-    height: auto;
-    background-attachment: fixed;
 }
 
-.container {
-    padding: 0 20%;
-}
-
+/* Navbar */
 nav {
+    width: 100%;
+    margin-top: 2rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    position: fixed;
-    margin-left: 175px;
-    top: 26px
 }
 
 #logo {
-    width: 60px;
-    height: auto;
-    margin-left: -38px;
+    max-height: 100%;
+    margin-left: 8em;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
+/* Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto; /* Centers container */
+    padding: 0 2%; /* Padding for small screens */
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 5%; /* More padding on medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1334px; /* Cap width for large screens */
+    }
+}
+
+/* Header Content */
 #header-content {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
-    flex-wrap: wrap; 
-    margin-top: 180px;
+    flex-wrap: wrap;
 }
 
 #title {
@@ -76,11 +88,23 @@ nav a {
     -webkit-text-fill-color: transparent;
 }
 
+.pfp-container {
+    background: linear-gradient(to bottom, #dc5653, #b03277);
+    border-radius: 10px;
+    height: 550px;
+    width: auto;
+}
+
 #profile-pic {
-    width: auto; /* Set the desired size of the image */
-    height: 550px; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+    width: auto;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+#profile-pic:hover {
+    transform: translateX(-5px) translateY(-5px); 
 }
 
 /* Social links */
@@ -248,7 +272,6 @@ nav a {
     border-radius: 10px;
 }
 
-/* Overlay styling */
 .overlay {
     position: absolute;
     top: 0;
@@ -256,7 +279,7 @@ nav a {
     width: 474px;
     height: 316px;
     background: linear-gradient(rgba(0,0,0,0.5), #ee3255);
-    transition: opacity 0.2s ease;
+    transition: opacity 0.4s ease;
     opacity: 0.9;
     border-radius: 10px;
     display: flex;
