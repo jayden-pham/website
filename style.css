@@ -1,3 +1,4 @@
+/* CSS */
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,34 @@
 body {
     background: #080808;
     color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 /* Header */
@@ -34,13 +63,14 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: bold;
     margin-left: 1rem;
 }
 
 /* Container */
 .container {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1920px;
     margin: 0 auto; /* Centers container */
     padding: 0 2%; /* Padding for small screens */
 }
@@ -53,53 +83,66 @@ nav a {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1334px; /* Cap width for large screens */
+        padding: 0 20%; /* Cap width for large screens */
     }
 }
 
 /* Header Content */
 #header-content {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: 6rem;
 }
 
+@media (min-width: 768px) {
+    #header-content {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+    }
+}
+
+/* Header - Text */
 #title {
-    font-size: 25px;
+    font-size: 1.5rem;
     opacity: 0.6;
     letter-spacing: 2px;
 }
 
-.intro {
-    font-size: 50px;
+#intro {
+    margin-top: 1.5rem;
+}
+
+#intro p {
+    font-size: 5rem;
     font-weight: bold;
-}
-
-#top {
-    margin-top: 25px;
-}
-
-#header-content h1 {
-    font-size: 80px;
     background: linear-gradient(to bottom, #dc5653, #b03277);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.pfp-container {
+
+/* Header - Profile Picture */
+#pfp-container {
+    width: 100%;
+    max-width: 24rem;
+    height: auto;
+    margin: 0 auto;
     background: linear-gradient(to bottom, #dc5653, #b03277);
-    border-radius: 10px;
-    height: 550px;
-    width: auto;
+    border-radius: 0.6rem;
+}
+
+@media (min-width: 768px) {
+    #pfp-container {
+        width: 20vw;
+        margin: 0;
+    }
 }
 
 #profile-pic {
-    width: auto;
-    height: 550px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.6rem;
     transition: transform 0.4s ease-in-out;
 }
 
