@@ -1,9 +1,12 @@
-/* CSS */
+/* CSS Reset*/
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,59 +14,40 @@ body {
     color: #fff;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
+h1, h2 {
     font-size: 2rem;
 }
-
-h4 {
-    font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
+h3, h4, h5, h6 {
     font-size: 1rem;
 }
-
-/* Header */
-header {
-    width: 100%;
+p {
+    font-size: 0.8rem;
 }
 
 /* Navbar */
 nav {
     width: 100%;
-    margin-top: 2rem;
-    height: 4rem;
+    margin: 1rem;
+    height: 3rem;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 #logo {
     max-height: 100%;
-    margin-left: 8em;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: bold;
     margin-left: 1rem;
 }
 
@@ -75,44 +59,25 @@ nav a {
     padding: 0 2%; /* Padding for small screens */
 }
 
-@media (min-width: 768px) {
-    .container {
-        padding: 0 5%; /* More padding on medium screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        padding: 0 20%; /* Cap width for large screens */
-    }
-}
-
 /* Header Content */
 #header-content {
-    margin-top: 6rem;
-}
-
-@media (min-width: 768px) {
-    #header-content {
-        display: flex; 
-        align-items: center; 
-        justify-content: space-between;
-    }
+    margin: 1rem auto 0 auto;
+    width: 100%;
 }
 
 /* Header - Text */
+#header-text {
+    text-align: center;
+}
+
 #title {
-    font-size: 1.5rem;
+    font-weight: 200;
     opacity: 0.6;
     letter-spacing: 2px;
 }
 
-#intro {
-    margin-top: 1.5rem;
-}
-
 #intro p {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     background: linear-gradient(to bottom, #dc5653, #b03277);
     background-clip: text;
@@ -120,34 +85,19 @@ nav a {
     -webkit-text-fill-color: transparent;
 }
 
-
 /* Header - Profile Picture */
 #pfp-container {
-    width: 100%;
-    max-width: 24rem;
+    max-width: 350px;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
     background: linear-gradient(to bottom, #dc5653, #b03277);
     border-radius: 0.6rem;
-}
-
-@media (min-width: 768px) {
-    #pfp-container {
-        width: 20vw;
-        margin: 0;
-    }
 }
 
 #profile-pic {
     width: 100%;
     height: auto;
-    display: block;
     border-radius: 0.6rem;
-    transition: transform 0.4s ease-in-out;
-}
-
-#profile-pic:hover {
-    transform: translateX(-5px) translateY(-5px); 
 }
 
 /* Social links */
@@ -155,6 +105,7 @@ nav a {
     position: fixed;
     top: 65%;
     left: 149px;
+    display: none;
 }
 
 #links ul {
@@ -186,6 +137,7 @@ nav a {
 
 /* Scroll */
 #scroll {
+    display: none;
     margin-top: 20px;
     margin-left: 15%;
 }
@@ -242,34 +194,21 @@ nav a {
 
 /* About */
 .section {
-    margin-top: 170px;
+    margin-top: 3rem;
 }
 
 #about .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.section h1 {
-    font-size: 50px;
-}
 .section h1::after {
     content: "."; /* The last letter */
     color: #ee3255; /* Desired color */
     font-weight: bold; /* Optional styling */
 }
 
-#about h1 {
-    flex: 1;
-}
-
-#about .container div {
-    flex: 1;
-    margin-top: -10px;
-}
-
 .section .container p {
-    font-size: large;
-    margin-top: 20px;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.8;
 }
@@ -279,37 +218,30 @@ nav a {
     text-decoration: none;
 }
 
-.anscenter img {
-    height: 24px;
-    width: auto;
-}
-
 /* Portfolio */
-#portfolio #intro {
-    margin-right: 650px;
-}
-
 .project-container {
-    margin: 90px 80px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 1rem auto;
 }
 
 .project-container .project-text {
-    position: relative;
-    width: 474px;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .image-container {
     position: relative; /* Establish positioning context */
-    width: 474px; /* Set the width of the image */
-    height: 316px; /* Set the height of the image */
+    max-width: 30rem; /* Set the width of the image */
+    height: auto; /* Set the height of the image */
     overflow: hidden; /* Ensures the overlay stays within the bounds */
+    margin-top: 1rem;
 }
 
 .project-image {
-    width: 474px;
-    height: 316px;
+    height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 10px;
@@ -319,8 +251,8 @@ nav a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 474px;
-    height: 316px;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(rgba(0,0,0,0.5), #ee3255);
     transition: opacity 0.4s ease;
     opacity: 0.9;
@@ -337,22 +269,20 @@ nav a {
 
 .misc {
     display: flex;
-    bottom: 0;
-    position: absolute;
-    width: 474px;
+    max-width: 30rem;
     justify-content: space-between;
     align-items: baseline;
 }
 
 .project-skills {
     display: flex;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
 .skill {
+    font-size: 0.8rem;
     background-color: rgba(238, 50, 85, 0.4);
-    border-radius: 15px;
-    font-size: large;
+    border-radius: 1rem;
     color: rgb(255, 207, 216);
     padding: 5px 12px;
 }

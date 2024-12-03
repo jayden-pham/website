@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jayden Pham</title>
     <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+
+    <!-- Poppins font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
             <img src="images/logo.png" id="logo">
-            <a href="">Menu</a>
+            <h4><a href="">Menu</a></h4>
         </nav>
         <div class="container">
             <div id="header-content">
-                <div>
-                    <p id="title">Software|ML/AI Engineer</p>
+                <div id="header-text">
+                    <h4 id="title">Software|ML/AI Engineer</h4>
                     <div id="intro">
                         <h1>Hi, my name is</h1>
                         <p>Jayden Pham</p>
@@ -76,12 +80,8 @@
             <h1>things i've built</h1>
             <p id="intro">I like making cool stuff in my free time. Check out some of the projects I’ve worked on below!</p>
             <div class="project-container" id="gremlin-game">
-                <div class="image-container">
-                    <img src="images/gremlin-game.png" class="project-image">
-                    <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><div class="overlay"><img style="width: 30px; height: auto;" src="images/redirect.png"></div></a>
-                </div>
-                <div class="project-text project-text-right">
-                    <h2>Gremlin Game</h2>
+                <div class="project-text">
+                    <h3>Gremlin Game</h3>
                     <p>I've always loved gaming, especially classic 2D gems like Bomb It. So, I decided to create my own!</p>
                     <p>Gremlin is a 2D game where you play as a wizard navigating obstacles, power-ups, and green gremlins to reach the level’s gate. Use fireballs to blast gremlins and smash brick walls!</p>
                     <div class="misc">
@@ -95,21 +95,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="image-container">
+                    <img src="images/gremlin-game.png" class="project-image">
+                    <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><div class="overlay"><img style="width: 30px; height: auto;" src="images/redirect.png"></div></a>
+                </div>
             </div>
             <div class="project-container" id="website">
-                <div class="project-text project-text-left">
-                    <h2>Portfolio Website</h2>
+                <div class="project-text">
+                    <h3>Portfolio Website</h3>
                     <p>I wanted a space that truly reflects who I am, so I built my own portfolio!</p>
                     <p>Using HTML, CSS, and JavaScript, I created this site to showcase my work, share my journey, and connect with others through a simple yet personal design</p>
                     <div class="misc">
-                        <div class="project-links">
-                            <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><img src="images/github.png" class="project-link"></a>
-                            <a href="" target="_blank"><img src="images/redirect.png" class="project-link"></a>
-                        </div>
                         <div class="project-skills">
                             <div class="skill">HTML</div>
                             <div class="skill">CSS</div>
                             <div class="skill">JavaScript</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><img src="images/github.png" class="project-link"></a>
+                            <a href="" target="_blank"><img src="images/redirect.png" class="project-link"></a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,194 @@
+@media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 0 5%; /* More padding on medium screens */
+    }
+
+    #header-content {
+        margin-top: 2rem;
+    }
+
+    #header-text {
+        text-align: left;
+    }
+
+    #intro p {
+        font-size: 3rem;
+    }
+
+    #pfp-container {
+        width: 20vw;
+        margin: 0;
+    }
+
+    #profile-pic {
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    #profile-pic:hover {
+        transform: translateX(-5px) translateY(-5px); 
+    }
+
+    #socials {
+        display: block;
+    }
+
+    #scroll {
+        display: block
+    }
+
+    .section {
+        margin-top: 10rem
+    }
+
+    .section .container p {
+        margin-top: 20px;
+    }
+
+    #portfolio #intro {
+        margin-right: 650px;
+    }
+
+    #about h1 {
+        flex: 1;
+    }
+    
+    #about .container div {
+        flex: 1;
+        margin-top: -0.5rem;
+    }
+
+    .project-container {
+        margin: 90px 80px;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 20rem;
+    }
+
+    .image-container {
+        margin-top: 0;
+    }
+
+    #gremlin-game .image-container {
+        order: 1;
+    }
+    
+    #gremlin-game .project-text {
+        order: 2;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+
+    #website .misc .project-skills {
+        order: 2;
+    }
+
+    #website .misc .project-links {
+        order: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    #header-content {
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #intro p {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 0 20%; /* Cap width for large screens */
+    }
+
+    #header-content {
+        margin-top: 5rem;
+    }
+
+    #intro p {
+        font-size: 5rem;
+    }
+}
