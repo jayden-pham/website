@@ -11,6 +11,9 @@
 
     <!-- Poppins font -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/8ceec591fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
@@ -133,20 +136,22 @@
                 <h1>get in touch</h1>
                 <p>I’m currently open to new opportunities and always happy to connect! Other than that, if you want to chat about anything, feel free to message me on any socials or email and I’ll get back to you as soon as I can!</p>
             </div>
-            <div class="container">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send Email</button>
-                </form>
+            <div class="email">
+                <div class="email-copy">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span class="email-text">khanhak299@gmail.com</span>
+                    <i class="fas fa-copy copy-icon" onclick="copyEmail()"></i>
+                </div>
+                <p>or</p>
+                <div class="email-btn"><a href="mailto:khanhak299@gmail.com" class="btn">Send Email</a></div>  
             </div>
-
+                    
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Jayden Pham. All Rights Reserved.</p>
+        <p>Designed & Built by Jayden Pham</p>
     </footer>
     <script src="script.js"></script>
 </body>
