@@ -161,7 +161,6 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 .project-misc {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     margin-bottom: 1rem;
 }
 
@@ -183,16 +182,17 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
     gap: 10px;
 }
 
-.project-link {
-    height: 31px; 
-    width: auto;
+.icon-link {
+    color: #fff;
     opacity: 0.7;
-    transition: opacity 0.2s;
-    margin-bottom: -10px;
+    font-size: 2rem;
+    transition: all 0.4s;
 }
 
-.project-link:hover {
-    opacity: 1;
+.icon-link:hover {
+    color: #ee3255;
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .project-image-container {
@@ -212,8 +212,10 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 }
 
 /* Contact */
-.contact {
-    margin-bottom: 3rem;
+.mobile-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .email {
@@ -221,30 +223,28 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 0.9rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .email-copy {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .email-copy .fa-paper-plane {
-    margin-right: 10px;
     color: #ee3255;
 }
 
-.email-text {
-    margin-right: 10px;
-    opacity: 0.65;
+.email-copy p {
+    margin-bottom: 0;
 }
 
 .email-copy .copy-icon {
     cursor: pointer;
     color: #fff;
-    opacity: 0.65;
+    opacity: 0.7;
     transition: color 0.3s;
 }
 
@@ -256,10 +256,22 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
     text-align: center;
 }
 
+.email-btn .btn {
+    margin-top: 0;
+}
+
 /* Footer */
 footer {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+footer p {
+    transition: 0.4s;
+}
+
+footer p:hover {
+    color: #ee3255;
 }
 
 /* Scroll */
@@ -320,7 +332,7 @@ footer {
 }
 
 /* Social links */
-.socials {
+.desktop-socials {
     position: fixed;
     top: 65%;
     left: 149px;

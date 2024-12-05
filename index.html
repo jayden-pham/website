@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
 
     <!-- Icons -->
-    <script src="https://kit.fontawesome.com/8ceec591fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css">
 </head>
 
 <body>
@@ -50,6 +50,19 @@
         </div>
     </header>
 
+    <!-- Jumping scroll text -->
+    <div class="scroll">
+        <div class="container jumping-word">
+            <h3 id="scroll-1">S</h3>
+            <h3 id="scroll-2">C</h3>
+            <h3 id="scroll-3">R</h3>
+            <h3 id="scroll-4">O</h3>
+            <h3 id="scroll-5">L</h3>
+            <h3 id="scroll-6">L</h3>
+        </div>
+        <div class="vertical-line"></div>
+    </div>
+
     <!-- About -->
     <div class="section" id="about">
         <div class="container">
@@ -80,7 +93,7 @@
                             <div class="skill">Image Processing</div>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><img src="images/github.png" class="project-link"></a>
+                            <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><i class="fa-brands fa-github icon-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -101,8 +114,8 @@
                             <div class="skill">JavaScript</div>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><img src="images/github.png" class="project-link"></a>
-                            <a href="" target="_blank"><img src="images/redirect.png" class="project-link"></a>
+                            <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><i class="fa-brands fa-github icon-link"></i></a>
+                            <a href="" target="_blank"><i class="fa-regular fa-arrow-up-right-from-square icon-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -117,53 +130,41 @@
     <!-- Contacts -->
     <div class="section" id="contact">
         <div class="container">
-            <div class="contact-intro">
-                <h1>get in touch</h1>
-                <p>I’m currently open to new opportunities and always happy to connect! Other than that, if you want to chat about anything, feel free to message me on any socials or email and I’ll get back to you as soon as I can!</p>
+            <h1>get in touch</h1>
+            <p>I’m currently open to new opportunities and always happy to connect! Other than that, if you want to chat about anything, feel free to message me on any socials or email and I’ll get back to you as soon as I can!</p>
+            <div class="mobile-socials">
+                <i class="fa-brands fa-github icon-link"></i>
+                <i class="fa-brands fa-linkedin icon-link"></i>
             </div>
             <div class="email">
                 <div class="email-copy">
                     <i class="fa-regular fa-paper-plane"></i>
-                    <span class="email-text">khanhak299@gmail.com</span>
+                    <p>khanhak299@gmail.com</p>
                     <i class="fas fa-copy copy-icon" onclick="copyEmail()"></i>
                 </div>
                 <p>or</p>
                 <div class="email-btn"><a href="mailto:khanhak299@gmail.com" class="btn">Send Email</a></div>  
-            </div>
-                    
+            </div>                  
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>Designed & Built by Jayden Pham</p>
+    <footer class="section">
+        <a href="https://github.com/jayden-pham/website-v1" target="_blank"><p>Designed & Built by Jayden Pham</p></a>       
     </footer>
 
-    <!-- Social links -->
-    <div class="socials">
+    <!-- Desktop Social Sidebar -->
+    <div class="desktop-socials">
         <div class="links">
             <ul>
-                <li><a href="https://github.com/jayden-pham" target="_blank"><img src="images/github.png" class="icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/jaydenphamsyd/" target="_blank"><img src="images/linkedin.png" class="icon"></a></li>
-                <li><a href="https://www.instagram.com/jayden_pham29/" target="_blank"><img src="images/instagram.png" class="icon"></a></li>
-                <li><a href=""><img src="images/mail.png" class="icon"></a></li>
+                <li><a href="https://github.com/jayden-pham" target="_blank"><i class="fa-brands fa-github icon-link"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jaydenphamsyd/" target="_blank"><img src="images/linkedin.png" class="icon-link"></a></li>
+                <li><a href="https://www.instagram.com/jayden_pham29/" target="_blank"><img src="images/instagram.png" class="icon-link"></a></li>
+                <li><a href=""><img src="images/mail.png" class="icon-link"></a></li>
             </ul>
         </div>
         <div class="vertical-line"></div>
      </div>
-
-    <!-- Jumping scroll text -->
-    <div class="scroll">
-        <div class="container jumping-word">
-            <h3 id="scroll-1">S</h3>
-            <h3 id="scroll-2">C</h3>
-            <h3 id="scroll-3">R</h3>
-            <h3 id="scroll-4">O</h3>
-            <h3 id="scroll-5">L</h3>
-            <h3 id="scroll-6">L</h3>
-        </div>
-        <div class="vertical-line"></div>
-    </div>
 
     <script src="script.js"></script>
 </body>
