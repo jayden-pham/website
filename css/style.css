@@ -24,6 +24,10 @@ h1 {font-size: 2rem;}
 h2, h3 {font-size: 1rem;}
 p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 
+:root {
+    --p-font-size: 1rem;
+}
+
 /* Mobile Navbar */
 .mobile-nav {
     width: 100%;
@@ -137,11 +141,11 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 .btn {
     display: inline-block;
     padding: 0.3rem;
-    background-color: rgba(238, 50, 85, 0.6);
+    background-color: rgba(238, 50, 85, 0.65);
     opacity: 0.8;
     color: #fff;
     border-radius: 0.3rem;
-    font-size: 1rem;
+    font-size: var(--p-font-size);
 }
 
 /* Portfolio */
@@ -163,7 +167,7 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 }
 
 .skill {
-    font-size: 1rem;
+    font-size: var(--p-font-size);
     background-color: rgba(238, 50, 85, 0.4);
     border-radius: 1rem;
     color: rgb(255, 207, 216);
@@ -263,94 +267,11 @@ footer p:hover {
     color: #ee3255;
 }
 
-/* Scroll */
+/* Scroll and social bar*/
 .scroll {
     display: none;
-    margin-top: 20px;
-    margin-left: 15%;
 }
 
-.jumping-word {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.jumping-word h3 {
-    opacity: 0.6;
-    margin-right: 4px;
-    animation: jump 2.7s ease-in-out infinite;
-}
-
-@keyframes jump {
-    0%, 20%, 100% {
-        transform: translateY(0);
-    }
-    10% {
-        transform: translateY(-6px);
-    }
-}
-
-.jumping-word #scroll-1 {
-    animation-delay: 0s;
-}
-
-.jumping-word #scroll-2 {
-    animation-delay: 0.15s;
-}
-
-.jumping-word #scroll-3 {
-    animation-delay: 0.3s;
-}
-
-.jumping-word #scroll-4 {
-    animation-delay: 0.45s;
-}
-
-.jumping-word #scroll-5 {
-    animation-delay: 0.6s;
-}
-
-.jumping-word #scroll-6 {
-    animation-delay: 0.75s;
-}
-
-.scroll .vertical-line {
-    margin-left: 367px;
-    height: 300px;
-    border-left: 2px solid white;
-}
-
-/* Social links */
 .desktop-socials {
-    position: fixed;
-    top: 65%;
-    left: 149px;
     display: none;
-}
-
-.links ul {
-    list-style: none;
-}
-
-.links ul li {
-    margin-bottom: 20px;
-}
-
-.icon {
-    width: 34px;
-    height: auto;
-    opacity: 0.4;
-    transition: opacity 0.5s, transform 0.4s;
-}
-
-.icon:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-.vertical-line {
-    border-left: 3px solid white;
-    height: 100px;
-    margin-left: 15px;
-    opacity: 0.4;
 }
