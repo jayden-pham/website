@@ -18,3 +18,12 @@ function copyEmail() {
       message.style.opacity = "0"; // Gradually fade out
     }, 2000); // Wait 2 seconds before starting the fade
 }
+
+window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('.mobile-nav');
+  if (window.scrollY > 0) {
+      navbar.classList.add('scrolled');
+  } else {
+      navbar.classList.remove('scrolled');
+  }
+});

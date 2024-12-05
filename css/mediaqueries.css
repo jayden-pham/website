@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h5, h6 {
         font-weight: bold;
     }
     h1 {
@@ -9,9 +9,6 @@
         font-size: 1.5rem;
     }
     h3 {
-        font-size: 1.5rem;
-    }
-    h4 {
         font-size: 1.5rem;
     }
     h5 {
@@ -28,36 +25,37 @@
         padding: 0 5%; /* More padding on medium screens */
     }
 
-    #header-content {
+    .header-content {
         margin-top: 2rem;
     }
 
-    #header-text {
+    .header-text {
         text-align: left;
     }
 
-    #intro p {
+    .intro p {
         font-size: 3rem;
     }
 
-    #pfp-container {
+    .pfp-container {
         width: 20vw;
         margin: 0;
+        background: linear-gradient(to bottom, #dc5653, #b03277);
     }
 
-    #profile-pic {
+    .profile-pic {
         transition: transform 0.4s ease-in-out;
     }
     
-    #profile-pic:hover {
+    .profile-pic:hover {
         transform: translateX(-5px) translateY(-5px); 
     }
 
-    #socials {
+    .socials {
         display: block;
     }
 
-    #scroll {
+    .scroll {
         display: block
     }
 
@@ -69,15 +67,15 @@
         margin-top: 20px;
     }
 
-    #portfolio #intro {
+    .portfolio .intro {
         margin-right: 650px;
     }
 
-    #about h1 {
+    .about h1 {
         flex: 1;
     }
     
-    #about .container div {
+    .about .container div {
         flex: 1;
         margin-top: -0.5rem;
     }
@@ -89,15 +87,44 @@
         height: 20rem;
     }
 
+    .project-desc {
+        max-width: 30rem;
+    }
+
+    .project-image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
     .image-container {
         margin-top: 0;
     }
 
-    #gremlin-game .image-container {
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5), #ee3255);
+        transition: opacity 0.4s ease;
+        opacity: 0.9;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .project-image-container:hover .overlay {
+        opacity: 0;
+    }
+
+    .gremlin-game .image-container {
         order: 1;
     }
     
-    #gremlin-game .project-text {
+    .gremlin-game .project-text {
         order: 2;
     }
 
@@ -105,29 +132,26 @@
         font-size: 1rem;
     }
 
-    #website .misc .project-skills {
+    .website .misc .project-skills {
         order: 2;
     }
 
-    #website .misc .project-links {
+    .website .misc .project-links {
         order: 1;
     }
 }
 
 @media (min-width: 1024px) {
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h5, h6 {
         font-weight: bold;
     }
     h1 {
         font-size: 3rem;
     }
     h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
         font-size: 2rem;
     }
-    h4 {
+    h3 {
         font-size: 1.5rem;
     }
     h5 {
@@ -140,7 +164,7 @@
         font-size: 1.1rem;
     }
 
-    #header-content {
+    .header-content {
         margin-top: 5rem;
         display: flex;
         align-items: center;
@@ -149,25 +173,22 @@
         flex-wrap: wrap;
     }
 
-    #intro p {
+    .intro p {
         font-size: 3rem;
     }
 }
 
 @media (min-width: 1440px) {
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h5, h6 {
         font-weight: bold;
     }
     h1 {
         font-size: 3rem;
     }
     h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
         font-size: 2rem;
     }
-    h4 {
+    h3 {
         font-size: 1.5rem;
     }
     h5 {
@@ -184,11 +205,11 @@
         padding: 0 20%; /* Cap width for large screens */
     }
 
-    #header-content {
+    .header-content {
         margin-top: 5rem;
     }
 
-    #intro p {
+    .intro p {
         font-size: 5rem;
     }
 }

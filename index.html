@@ -15,55 +15,40 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/8ceec591fa.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- Navigation Bar -->
+    <nav class="mobile-nav">
+        <img src="images/logo.png" class="logo">
+        <div class="nav-links">
+            <h3><a href="#about">About</a></h3>
+            <h3><a href="#projects">Projects</a></h3>
+            <h3><a href="#contact">Contact</a></h3>
+        </div>
+    </nav>
+
+    <nav class="desktop-nav">
+        <img src="images/logo.png" class="logo">
+    </nav>
+
     <!-- Header -->
     <header>
-        <nav>
-            <img src="images/logo.png" id="logo">
-            <h4><a href="">Menu</a></h4>
-        </nav>
         <div class="container">
-            <div id="header-content">
-                <div id="header-text">
-                    <h4 id="title">Software|ML/AI Engineer</h4>
-                    <div id="intro">
+            <div class="header-content">
+                <div class="header-text">
+                    <h3 class="title">Software|ML/AI Engineer</h3>
+                    <div class="intro">
                         <h1>Hi, my name is</h1>
                         <p>Jayden Pham</p>
                         <h1>from Sydney, Australia.</h1>
                     </div>
                 </div>
-                <div id="pfp-container">
-                    <img src="images/me.jpg" id="profile-pic">
+                <div class="pfp-container">
+                    <img src="images/me.jpg" class="profile-pic">
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- Social links -->
-     <div id="socials">
-        <div id="links">
-            <ul>
-                <li><a href="https://github.com/jayden-pham" target="_blank"><img src="images/github.png" class="icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/jaydenphamsyd/" target="_blank"><img src="images/linkedin.png" class="icon"></a></li>
-                <li><a href="https://www.instagram.com/jayden_pham29/" target="_blank"><img src="images/instagram.png" class="icon"></a></li>
-                <li><a href=""><img src="images/mail.png" class="icon"></a></li>
-            </ul>
-        </div>
-        <div class="vertical-line"></div>
-     </div>
-
-    <!-- Jumping scroll text -->
-    <div id="scroll">
-        <div class="container jumping-word">
-            <h4 id="scroll-1">S</h4>
-            <h4 id="scroll-2">C</h4>
-            <h4 id="scroll-3">R</h4>
-            <h4 id="scroll-4">O</h4>
-            <h4 id="scroll-5">L</h4>
-            <h4 id="scroll-6">L</h4>
-        </div>
-        <div class="vertical-line"></div>
-    </div>
 
     <!-- About -->
     <div class="section" id="about">
@@ -78,17 +63,17 @@
         </div>
     </div>
 
-    <!-- Portfolio -->
-    <div class="section" id="portfolio">
+    <!-- Projects -->
+    <div class="section" id="projects">
         <div class="container">
             <h1>things i've built</h1>
-            <p id="intro">I like making cool stuff in my free time. Check out some of the projects I’ve worked on below!</p>
-            <div class="project-container" id="gremlin-game">
-                <div class="project-text">
-                    <h3>Gremlin Game</h3>
+            <p>I like making cool stuff in my free time. Check out some of the projects I’ve worked on below!</p>
+            <div class="project-container" class="gremlin-game">
+                <div class="project-desc">
+                    <h2>Gremlin Game</h2>
                     <p>I've always loved gaming, especially classic 2D gems like Bomb It. So, I decided to create my own!</p>
                     <p>Gremlin is a 2D game where you play as a wizard navigating obstacles, power-ups, and green gremlins to reach the level’s gate. Use fireballs to blast gremlins and smash brick walls!</p>
-                    <div class="misc">
+                    <div class="project-misc">
                         <div class="project-skills">
                             <div class="skill">Java</div>
                             <div class="skill">OOP</div>
@@ -99,17 +84,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container">
-                    <img src="images/gremlin-game.png" class="project-image">
+                <div class="project-image-container">
+                    <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><img src="images/gremlin-game.png" class="project-image"></a>          
                     <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><div class="overlay"><img style="width: 30px; height: auto;" src="images/redirect.png"></div></a>
                 </div>
             </div>
-            <div class="project-container" id="website">
-                <div class="project-text">
-                    <h3>Portfolio Website</h3>
+            <div class="project-container" class="website">
+                <div class="project-desc">
+                    <h2>Portfolio Website</h2>
                     <p>I wanted a space that truly reflects who I am, so I built my own portfolio!</p>
                     <p>Using HTML, CSS, and JavaScript, I created this site to showcase my work, share my journey, and connect with others through a simple yet personal design</p>
-                    <div class="misc">
+                    <div class="project-misc">
                         <div class="project-skills">
                             <div class="skill">HTML</div>
                             <div class="skill">CSS</div>
@@ -121,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container">
+                <div class="project-image-container">
                     <img src="images/website.png" class="project-image">
                     <a href="https://github.com/jayden-pham/gremlin-game" target="_blank"><div class="overlay"><img style="width: 30px; height: auto;" src="images/redirect.png"></div></a>
                 </div>
@@ -153,6 +138,33 @@
     <footer>
         <p>Designed & Built by Jayden Pham</p>
     </footer>
+
+    <!-- Social links -->
+    <div class="socials">
+        <div class="links">
+            <ul>
+                <li><a href="https://github.com/jayden-pham" target="_blank"><img src="images/github.png" class="icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/jaydenphamsyd/" target="_blank"><img src="images/linkedin.png" class="icon"></a></li>
+                <li><a href="https://www.instagram.com/jayden_pham29/" target="_blank"><img src="images/instagram.png" class="icon"></a></li>
+                <li><a href=""><img src="images/mail.png" class="icon"></a></li>
+            </ul>
+        </div>
+        <div class="vertical-line"></div>
+     </div>
+
+    <!-- Jumping scroll text -->
+    <div class="scroll">
+        <div class="container jumping-word">
+            <h3 id="scroll-1">S</h3>
+            <h3 id="scroll-2">C</h3>
+            <h3 id="scroll-3">R</h3>
+            <h3 id="scroll-4">O</h3>
+            <h3 id="scroll-5">L</h3>
+            <h3 id="scroll-6">L</h3>
+        </div>
+        <div class="vertical-line"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
