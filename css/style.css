@@ -138,17 +138,10 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
     display: inline-block;
     padding: 0.3rem;
     background-color: rgba(238, 50, 85, 0.6);
-    color: #fff;
     opacity: 0.8;
+    color: #fff;
     border-radius: 0.3rem;
-    transition: background-color 0.8s, opacity 0.8s, transform 0.8s;
     font-size: 1rem;
-}
-
-.btn:hover {
-    background-color: #ee3255;
-    opacity: 1;
-    transform: translateY(-5px);
 }
 
 /* Portfolio */
@@ -226,6 +219,10 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
     margin-top: 0.5rem;
 }
 
+.email p {
+    margin-bottom: 0.4rem;
+}
+
 .email-copy {
     display: flex;
     align-items: center;
@@ -235,10 +232,6 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 
 .email-copy .fa-paper-plane {
     color: #ee3255;
-}
-
-.email-copy p {
-    margin-bottom: 0;
 }
 
 .email-copy .copy-icon {
@@ -254,10 +247,6 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 
 .email-btn {
     text-align: center;
-}
-
-.email-btn .btn {
-    margin-top: 0;
 }
 
 /* Footer */
