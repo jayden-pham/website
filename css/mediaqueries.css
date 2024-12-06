@@ -8,7 +8,7 @@
     }
 
     .container {
-        padding: 0 7%; /* More padding on medium screens */
+        padding: 0 7%;
     }
 
     .header-content {
@@ -49,22 +49,24 @@
 }
 
 @media (min-width: 1024px) {
+
+    .container {
+        padding: 0 10%;
+    }
+
     .header-content {
         margin-top: 5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        display: flex;
-        flex-wrap: wrap;
+        gap: 3rem;
     }
 
-    .intro p {
-        font-size: 3rem;
+    .header-text {
+        white-space: nowrap;
     }
 
     .pfp-container {
-        width: 20vw;
-        margin: 0;
         background: linear-gradient(to bottom, #dc5653, #b03277);
     }
 
@@ -76,6 +78,64 @@
         transform: translateX(-5px) translateY(-5px); 
     }
 
+    /* Scroll */
+    .scroll {
+        display: block;
+        margin-top: 20px;
+        margin-left: 15%;
+    }
+    
+    .jumping-word {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .jumping-word h3 {
+        opacity: 0.6;
+        margin-right: 4px;
+        animation: jump 2.7s ease-in-out infinite;
+    }
+    
+    @keyframes jump {
+        0%, 20%, 100% {
+            transform: translateY(0);
+        }
+        10% {
+            transform: translateY(-6px);
+        }
+    }
+    
+    .jumping-word #scroll-1 {
+        animation-delay: 0s;
+    }
+    
+    .jumping-word #scroll-2 {
+        animation-delay: 0.15s;
+    }
+    
+    .jumping-word #scroll-3 {
+        animation-delay: 0.3s;
+    }
+    
+    .jumping-word #scroll-4 {
+        animation-delay: 0.45s;
+    }
+    
+    .jumping-word #scroll-5 {
+        animation-delay: 0.6s;
+    }
+    
+    .jumping-word #scroll-6 {
+        animation-delay: 0.75s;
+    }
+    
+    .scroll .vertical-line {
+        margin-left: 367px;
+        height: 300px;
+        border-left: 2px solid white;
+    }
+
+    /* About */
     .about h1 {
         flex: 1;
     }
@@ -164,61 +224,6 @@
         background-color: #ee3255;
         opacity: 1;
         transform: translateY(-5px);
-    }
-
-    .scroll {
-        margin-top: 20px;
-        margin-left: 15%;
-    }
-    
-    .jumping-word {
-        display: flex;
-        margin-bottom: 15px;
-    }
-    
-    .jumping-word h3 {
-        opacity: 0.6;
-        margin-right: 4px;
-        animation: jump 2.7s ease-in-out infinite;
-    }
-    
-    @keyframes jump {
-        0%, 20%, 100% {
-            transform: translateY(0);
-        }
-        10% {
-            transform: translateY(-6px);
-        }
-    }
-    
-    .jumping-word #scroll-1 {
-        animation-delay: 0s;
-    }
-    
-    .jumping-word #scroll-2 {
-        animation-delay: 0.15s;
-    }
-    
-    .jumping-word #scroll-3 {
-        animation-delay: 0.3s;
-    }
-    
-    .jumping-word #scroll-4 {
-        animation-delay: 0.45s;
-    }
-    
-    .jumping-word #scroll-5 {
-        animation-delay: 0.6s;
-    }
-    
-    .jumping-word #scroll-6 {
-        animation-delay: 0.75s;
-    }
-    
-    .scroll .vertical-line {
-        margin-left: 367px;
-        height: 300px;
-        border-left: 2px solid white;
     }
     
     /* Social links */
