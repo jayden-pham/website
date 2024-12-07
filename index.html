@@ -18,17 +18,13 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="mobile-nav">
+    <nav>
         <img src="images/logo.png" class="logo">
         <div class="nav-links">
             <h3><a href="#about">About</a></h3>
             <h3><a href="#projects">Projects</a></h3>
             <h3><a href="#contact">Contact</a></h3>
         </div>
-    </nav>
-
-    <nav class="desktop-nav">
-        <img src="images/logo.png" class="logo">
     </nav>
 
     <!-- Header -->
@@ -78,8 +74,13 @@
     <!-- Projects -->
     <div class="section" id="projects">
         <div class="container">
-            <h1>things i've built</h1>
-            <p id="projects-intro">I like making cool stuff in my free time. Check out some of the projects I’ve worked on below!</p>
+            <div id="projects-dotted-box">
+                <div>
+                    <h1>things i've built</h1>
+                    <p>I like making cool stuff in my free time. Check out some of the projects I’ve worked on below!</p>
+                </div>              
+                <div class="dotted-box"></div>
+            </div>          
             <div class="project-container odd-num-project" id="gremlin-game">
                 <div class="project-desc">
                     <div class="project-text">
@@ -156,15 +157,9 @@
 
     <!-- Desktop Social Sidebar -->
     <div class="desktop-socials">
-        <div class="links">
-            <ul>
-                <li><a href="https://github.com/jayden-pham" target="_blank"><i class="fa-brands fa-github icon-link"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jaydenphamsyd/" target="_blank"><img src="images/linkedin.png" class="icon-link"></a></li>
-                <li><a href="https://www.instagram.com/jayden_pham29/" target="_blank"><img src="images/instagram.png" class="icon-link"></a></li>
-                <li><a href="#contact"><img src="images/mail.png" class="icon-link"></a></li>
-            </ul>
-        </div>
-        <div class="vertical-line"></div>
+        <a href="https://github.com/jayden-pham" target="_blank"><i class="fa-brands fa-github icon-link"></i></a>
+        <a href="https://www.linkedin.com/in/jaydenphamsyd/" target="_blank"><i class="fa-brands fa-linkedin icon-link"></i></a>
+        <a href="#contact"><i class="fa-light fa-envelope icon-link"></i></a>
     </div>
 
     <!-- External JS -->

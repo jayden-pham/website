@@ -11,6 +11,14 @@
         padding: 0 7%;
     }
 
+    nav {
+        padding: 1.25rem 5%;
+    }
+    
+    nav.scrolled {
+        padding: 0.75rem 5%;
+    }
+
     .header-content {
         margin-top: 3rem;
     }
@@ -52,6 +60,14 @@
 
     .container {
         padding: 0 10%;
+    }
+
+    nav {
+        padding: 1.25rem 10%;
+    }
+    
+    nav.scrolled {
+        padding: 0.75rem 10%;
     }
 
     .header-content {
@@ -152,6 +168,33 @@
         display: flex;
     }
 
+    #projects-dotted-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    .dotted-box {
+        display: block;
+        width: 50%;
+        background-image: radial-gradient(rgba(238, 50, 85, 0.65) 1px, transparent 1px);
+        background-size: 1rem 1rem;
+        border-radius: 0.3rem;
+        animation: move-up-and-down 4s infinite;
+    }
+
+    @keyframes move-up-and-down {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 0 4px; /* Move down */
+        }
+        100% {
+            background-position: 0 0; /* Move back up */
+        }
+    }
+
     #about h1 {
         flex: 1;
     }
@@ -162,20 +205,16 @@
     }
 
     /* Portfolio */
-    #projects-intro {
-        margin-right: 50%;
-    }
-
     .project-container {
-        margin: 3rem 0;
+        margin: 6rem 0;
         justify-content: space-between;
         flex-direction: row;
         gap: 4%;
     }
 
     .project-desc {
-        max-width: 30rem;
         flex: 0 0 48%;
+        max-width: 30rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -255,65 +294,71 @@
 }
 
 @media (min-width: 1440px) {
-    h1, h2, h3, h5, h6 {
-        font-weight: bold;
+    h1 {font-size: 3rem;}
+    h2 {font-size: 2rem;}
+    h3 {font-size: 1.5rem;}
+    p {font-size: 1.2rem;}
+
+    :root {
+        --p-font-size: 1.2rem;
     }
-    h1 {
-        font-size: 3rem;
+
+    nav {
+        padding: 1.25rem 7%;
     }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1.1rem;
+    
+    nav.scrolled {
+        padding: 0.75rem 7%;
     }
 
     .container {
-        padding: 0 20%; /* Cap width for large screens */
+        padding: 0 18%; /* Cap width for large screens */
     }
 
     .header-content {
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
 
     .intro p {
         font-size: 5rem;
     }
 
+    .section {
+        padding-top: 10rem;
+    }
+
+    .project-container {
+        padding: 0 7%;
+    }
+
     /* Social links */
+    .mobile-socials {
+        display: none;
+    }
+
     .desktop-socials {
         position: fixed;
-        top: 65%;
-        left: 149px;
+        top: 70%;
+        left: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
     }
-    
-    .links ul {
-        list-style: none;
+
+    .desktop-socials .icon-link:hover {
+        transform: scale(1.1);
     }
-    
-    .links ul li {
-        margin-bottom: 20px;
-    }
-    
-    .icon {
-        width: 34px;
-        height: auto;
-        opacity: 0.4;
-        transition: opacity 0.5s, transform 0.4s;
-    }
-    
-    .icon:hover {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    
-    .vertical-line {
-        border-left: 3px solid white;
-        height: 100px;
-        margin-left: 15px;
-        opacity: 0.4;
-    }
+
+    .desktop-socials::after {
+        content: "";
+        position: absolute;
+        bottom: -16.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 15rem;
+        background-color: white; 
+        opacity: 0.7;
+      }
 }
