@@ -346,10 +346,6 @@
         gap: 1.2rem;
     }
 
-    .desktop-socials .icon-link:hover {
-        transform: scale(1.1);
-    }
-
     .desktop-socials::after {
         content: "";
         position: absolute;

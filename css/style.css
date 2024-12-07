@@ -182,6 +182,7 @@ nav .nav-links a {
     color: #ee3255;
     opacity: 0.9;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .project-image-container {
