@@ -64,6 +64,7 @@
 
     .header-text {
         white-space: nowrap;
+        text-align: left;
     }
 
     .pfp-container {
@@ -80,93 +81,123 @@
 
     /* Scroll */
     .scroll {
-        display: block;
-        margin-top: 20px;
-        margin-left: 15%;
-    }
-    
-    .jumping-word {
         display: flex;
-        margin-bottom: 15px;
+        justify-content: flex-start;
+    }
+
+    .jumping {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 1rem 0 18rem 12rem;
     }
     
-    .jumping-word h3 {
-        opacity: 0.6;
+    .jumping h3 {
+        opacity: 0.7;
         margin-right: 4px;
         animation: jump 2.7s ease-in-out infinite;
     }
+
+    .jumping::after {
+        content: "";
+        position: absolute;
+        bottom: -18.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 18rem;
+        background-color: white;
+        opacity: 0.7;
+      }
     
     @keyframes jump {
         0%, 20%, 100% {
             transform: translateY(0);
+            color: #fff;
+            opacity: 0.7;
         }
         10% {
             transform: translateY(-6px);
+            color: #ee3255;
+            opacity: 1;
         }
     }
     
-    .jumping-word #scroll-1 {
+    .scroll #scroll-1 {
         animation-delay: 0s;
     }
     
-    .jumping-word #scroll-2 {
+    .scroll #scroll-2 {
         animation-delay: 0.15s;
     }
     
-    .jumping-word #scroll-3 {
+    .scroll #scroll-3 {
         animation-delay: 0.3s;
     }
     
-    .jumping-word #scroll-4 {
+    .scroll #scroll-4 {
         animation-delay: 0.45s;
     }
     
-    .jumping-word #scroll-5 {
+    .scroll #scroll-5 {
         animation-delay: 0.6s;
     }
     
-    .jumping-word #scroll-6 {
+    .scroll #scroll-6 {
         animation-delay: 0.75s;
-    }
-    
-    .scroll .vertical-line {
-        margin-left: 367px;
-        height: 300px;
-        border-left: 2px solid white;
     }
 
     /* About */
-    .about h1 {
+    #about .container {
+        display: flex;
+    }
+
+    #about h1 {
         flex: 1;
     }
     
-    .about .container div {
+    #about .container div {
         flex: 1;
-        margin-top: -0.5rem;
+        padding-top: 0.5rem;
     }
 
+    /* Portfolio */
     #projects-intro {
-        margin-right: 650px;
+        margin-right: 50%;
     }
 
     .project-container {
-        margin: 90px 80px;
+        margin: 3rem 0;
         justify-content: space-between;
         flex-direction: row;
-        height: 20rem;
+        gap: 4%;
     }
 
     .project-desc {
         max-width: 30rem;
+        flex: 0 0 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project-misc {
+        margin-bottom: 0;
+    }
+
+    .skill {
+        padding: 0.2rem 0.6rem;
     }
 
     .project-image-container {
         position: relative;
         overflow: hidden;
+        flex: 0 0 48%;
+        margin: 0;
     }
 
-    .image-container {
-        margin-top: 0;
+    .project-image {
+        width: 100%;
     }
 
     .overlay {
@@ -189,24 +220,20 @@
         opacity: 0;
     }
 
-    .gremlin-game .image-container {
+    .odd-num-project .project-image-container {
         order: 1;
     }
-    
-    .gremlin-game .project-text {
+
+    .odd-num-project .project-desc {
         order: 2;
     }
 
-    .skill {
-        font-size: 1rem;
-    }
-
-    .website .misc .project-skills {
-        order: 2;
-    }
-
-    .website .misc .project-links {
+    .odd-num-project .project-misc .project-links {
         order: 1;
+    }
+
+    .odd-num-project .project-misc .project-skills {
+        order: 2;
     }
 
     .btn {
@@ -225,7 +252,37 @@
         opacity: 1;
         transform: translateY(-5px);
     }
-    
+}
+
+@media (min-width: 1440px) {
+    h1, h2, h3, h5, h6 {
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 0 20%; /* Cap width for large screens */
+    }
+
+    .header-content {
+        margin-top: 5rem;
+    }
+
+    .intro p {
+        font-size: 5rem;
+    }
+
     /* Social links */
     .desktop-socials {
         position: fixed;
@@ -258,35 +315,5 @@
         height: 100px;
         margin-left: 15px;
         opacity: 0.4;
-    }
-}
-
-@media (min-width: 1440px) {
-    h1, h2, h3, h5, h6 {
-        font-weight: bold;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1.1rem;
-    }
-
-    .container {
-        padding: 0 20%; /* Cap width for large screens */
-    }
-
-    .header-content {
-        margin-top: 5rem;
-    }
-
-    .intro p {
-        font-size: 5rem;
     }
 }

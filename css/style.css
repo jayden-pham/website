@@ -73,8 +73,8 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 .container {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto; /* Centers container */
-    padding: 0 2%; /* Padding for small screens */
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 /* Header Content */
@@ -164,6 +164,7 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
 .project-skills {
     display: flex;
     gap: 0.5rem;
+    align-items: center;
 }
 
 .skill {
@@ -171,7 +172,7 @@ p {font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8}
     background-color: rgba(238, 50, 85, 0.4);
     border-radius: 1rem;
     color: rgb(255, 207, 216);
-    padding: 5px 12px;
+    padding: 0.2rem 0.5rem;
 }
 
 .project-links {
