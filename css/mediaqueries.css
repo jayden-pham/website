@@ -180,7 +180,7 @@
         background-image: radial-gradient(rgba(238, 50, 85, 0.65) 1px, transparent 1px);
         background-size: 1rem 1rem;
         border-radius: 0.3rem;
-        animation: move-up-and-down 4s infinite;
+        animation: move-up-and-down 4s infinite linear;
     }
 
     @keyframes move-up-and-down {
@@ -188,10 +188,10 @@
             background-position: 0 0;
         }
         50% {
-            background-position: 0 4px; /* Move down */
+            background-position: 0 4px;
         }
         100% {
-            background-position: 0 0; /* Move back up */
+            background-position: 0 0;
         }
     }
 
@@ -312,7 +312,7 @@
     }
 
     .container {
-        padding: 0 18%; /* Cap width for large screens */
+        padding: 0 18%;
     }
 
     .header-content {
@@ -361,7 +361,7 @@
     @keyframes appear {
         from {
             opacity: 0;
-            scale: 0.8;
+            scale: 0.6;
         } to {
             opacity: 1;
             scale: 1;
@@ -369,8 +369,8 @@
     }
 
     .section {
-        animation: appear linear;
+        animation: appear ease-out;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 45%;
     }
 }
